@@ -1,0 +1,15 @@
+<h3>Here are the current haiku reviews.</h3>
+<ul>
+  <% @haikus.each do |book, author, poem| %>
+    <p>
+      <li> <%= book %></li>
+      <li> <%= author %></li>
+      <li> <%= poem %></li>
+    </p>
+  <% end %>
+</ul>
+
+<br>
+<form action='/enter' method='get'>
+  <button>Rate some books with haiku!</button>
+</form>
